@@ -94,7 +94,7 @@ void dino(int pulo)
     }
     else
     {
-        //      ßßßßßßßßßßßßßßßßß
+        
         printf("_________________");
     }
     delay(vel);

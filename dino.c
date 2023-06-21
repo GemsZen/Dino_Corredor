@@ -4,7 +4,6 @@
 #include <time.h>
 #include <windows.h>
 
-//Variáveis globais
 int t,vel=40;
 
 void gotoxy(int x, int y)
@@ -70,14 +69,13 @@ void dino(int pulo)
     gotoxy(2,22-t);
     printf("   #########     ");
     gotoxy(2,23-t);
-    // código necessário para a movimentação das pernas
-    //Posição das pernas no ar
+
     if(pulo==1 || pulo==2){
 	    printf("    ### ##       ");
 	    gotoxy(2,24-t);
 	    printf("    ##   ##      ");
 
-	//Alternança da posição das pernas ao correr
+	
     }else if(a==1){
 	    printf("    ####  ###    ");
 	    gotoxy(2,24-t);
@@ -91,7 +89,6 @@ void dino(int pulo)
     }
     gotoxy(2,25-t);
 
-    //Se não estiver no chão, imprime vazio logo abaixo do dino
     if(pulo !=0){
         printf("                ");
     }
@@ -108,7 +105,6 @@ char manip_object()
     static int x=0, scr=0;
     char continuar = ' ';
 
-    //Impressão de fim de jogo
     if(x==63 && t<4)
     {
 	    scr=0;
@@ -119,7 +115,6 @@ char manip_object()
 	    printf("Aperte W para recomecar ou X para retornar ao menu");
 	    continuar = getch();
 
-	    //Reiniciando o jogo
 	    x = 0;
 	    gotoxy(19,20);
 	    printf("        ");
@@ -171,7 +166,6 @@ char manip_object()
 char menu(){
 	system("cls");
 	
-	//Escrevendo "DINO" na tela
 	gotoxy(33,10);
 	printf("###  # #  # ####");
 	gotoxy(33,11);

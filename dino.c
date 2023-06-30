@@ -33,9 +33,7 @@ void iniciar(){
     gotoxy(62,2);
     printf("SCORE : ");
     gotoxy(1,25);
-    for(int x=0;x<79;x++){
-    	printf("_");
-    }
+   
 }
 
 void dino(int pulo)

@@ -199,4 +199,3 @@ void creditos(){
 	getch();
 }
 
-

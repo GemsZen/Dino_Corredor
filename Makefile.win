@@ -4,8 +4,8 @@
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = dino.o the_final_dino.o $(RES)
-LINKOBJ  = dino.o the_final_dino.o $(RES)
+OBJ      = dino.o Final_Dino.o $(RES)
+LINKOBJ  = dino.o Final_Dino.o $(RES)
 LIBS     = -L"C:/Users/Usuario/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"C:/Users/Usuario/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
 CXXINCS  = -I"C:/Users/Usuario/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
@@ -28,5 +28,5 @@ $(BIN): $(OBJ)
 dino.o: dino.c
 	$(CC) -c dino.c -o dino.o $(CFLAGS)
 
-the_final_dino.o: the_final_dino.c
-	$(CC) -c the_final_dino.c -o the_final_dino.o $(CFLAGS)
+Final_Dino.o: Final_Dino.c
+	$(CC) -c Final_Dino.c -o Final_Dino.o $(CFLAGS)

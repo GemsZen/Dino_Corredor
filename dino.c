@@ -198,3 +198,4 @@ void creditos(){
 
 	getch();
 }
+
